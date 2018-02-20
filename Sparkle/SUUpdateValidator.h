@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SUExport.h"
 
 @class SUHost;
 
-@interface SUUpdateValidator : NSObject
+SU_EXPORT @interface SUUpdateValidator : NSObject
 
 // Pass YES to performingPrevalidation if archive validation must be done immediately, before extraction
 - (instancetype)initWithDownloadPath:(NSString *)downloadPath dsaSignature:(NSString *)dsaSignature host:(SUHost *)host performingPrevalidation:(BOOL)performingPrevalidation;

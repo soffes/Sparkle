@@ -16,6 +16,7 @@
 #define SUDSAVERIFIER_H
 
 #import <Foundation/Foundation.h>
+#import "SUExport.h"
 
 #if __MAC_OS_X_VERSION_MAX_ALLOWED < 1090
 @interface NSData (SUDSAVerifier)
@@ -23,7 +24,7 @@
 @end
 #endif
 
-@interface SUDSAVerifier : NSObject
+SU_EXPORT @interface SUDSAVerifier : NSObject
 
 + (BOOL)validatePath:(NSString *)path withEncodedDSASignature:(NSString *)encodedSignature withPublicDSAKey:(NSString *)pkeyString;
 
