@@ -29,4 +29,10 @@
 #import "SPUDownloaderSession.h"
 #import "SPUURLRequest.h"
 
+
+#import "SUUpdateValidator.h"
+#import "SUDSAVerifier.h"
+#import "SUCodeSigningVerifier.h"
+#import "SUHost.h"
+
 #endif
